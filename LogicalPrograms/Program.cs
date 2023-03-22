@@ -12,13 +12,18 @@ namespace LogicalPrograms
         {
             while (true)
             {
-                Console.WriteLine("Choose from following options : \n 1) To count total number of duplicate elements in an array.");
+                Console.WriteLine("\n Choose from following options : \n 1) To count total number of duplicate elements in an array.\n 2) To print unique elements");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
                         DuplicateElements.DuplicateNumbers();
-                        break;  
+                        break;
+
+                    case 2:
+                        UniqueElements.Unique();
+                        break;
+
                 }
             }
                       
