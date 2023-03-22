@@ -12,7 +12,8 @@ namespace LogicalPrograms
         {
             while (true)
             {
-                Console.WriteLine("\n Choose from following options : \n 1) To count total number of duplicate elements in an array.\n 2) To print unique elements");
+                Console.WriteLine("\n Choose from following options : \n 1) To count total number of duplicate elements in an array.\n 2) To print unique elements" +
+                    "\n 3) To count frequency of each element ");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -22,6 +23,10 @@ namespace LogicalPrograms
 
                     case 2:
                         UniqueElements.Unique();
+                        break;
+
+                    case 3:
+                        FrequencyOfElements.ElementsFrequency();
                         break;
 
                 }
