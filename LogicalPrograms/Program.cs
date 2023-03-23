@@ -15,7 +15,7 @@ namespace LogicalPrograms
                 Console.WriteLine("\n Choose from following options : \n 1) To count total number of duplicate elements in an array.\n 2) To print unique elements" +
                     "\n 3) To count frequency of each element \n 4) To find largest and minimum element from array " +
                     "\n 5) To print the reverse angle traingle in '*' pattern\n 6) To print * pattern in Square format" +
-                    "\n 7) To print reverse a word");
+                    "\n 7) To print reverse a word \n 8) To print sum of digits\n");
                 int option=Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -45,6 +45,10 @@ namespace LogicalPrograms
 
                     case 7:
                         ReverseWord.Reverse();
+                        break;
+
+                    case 8:
+                        SumofDigits.Sum();
                         break;
 
                 }
